@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <header>
+        <h1>User Profile</h1>
+    </header>
+    <main>
+        <section id="profile-info" class="profile-section">
+            <h2>User Information</h2>
+            <div class="profile-item">
+                <label for="username">Username:</label>
+                <span id="username">JohnDoe</span>
+            </div>
+            <div class="profile-item">
+                <label for="email">Email:</label>
+                <span id="email">johndoe@example.com</span>
+            </div>
+            <div class="profile-item">
+                <label for="age">Age:</label>
+                <span id="age">30</span>
+            </div>
+            <div class="profile-item">
+                <label for="country">Country:</label>
+                <span id="country">United States</span>
+            </div>
+        </section>
+        <section id="edit-profile" class="profile-section">
+            <h2>Edit Profile</h2>
+            <form id="edit-profile-form">
+                <label for="new-username">New Username:</label>
+                <input type="text" id="new-username" name="new-username">
+                <label for="new-email">New Email:</label>
+                <input type="email" id="new-email" name="new-email">
+                <label for="new-age">New Age:</label>
+                <input type="number" id="new-age" name="new-age">
+                <label for="new-country">New Country:</label>
+                <input type="text" id="new-country" name="new-country">
+                <input type="submit" value="Save Changes">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MovieSite</p>
+    </footer>
+    <script src="test.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+.navbar {
+    width: 100%;
+    height: 56px;
+    background: linear-gradient(to right, orangered, rgb(65, 62, 62));
+    z-index: 999;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 110px;
+    box-shadow: 0px 5px 15px;
+    border-radius: 5px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+
+}
+.back-site{
+    position: relative;
+    left: -50px;
+    font-size: 3.5em;
+    color: rgb(230, 201, 190);
+}
+.back-site:hover{
+    color: white;
+    left: -60px;
+    font-size: 3.9em;
+    transition: .4s;
+}
+.logo-pic {
+    width: 3.7em;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.logo {
+    color: rgb(230, 201, 190);
+    text-decoration: none ;
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-left: 10px;
+
+}
+
+.logo span {
+    font-size: .8em;
+    text-transform: lowercase;
+}
+
+
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+
+.menu-list li a {
+    text-decoration: none;
+    margin-right: 1.3em;
+    color: rgb(230, 212, 190);
+    transition: 0.5s;
+}
+.menu-list li a:hover:not(.input) {
+    content: " ";
+    color: orangered;
+    font-weight: 800;
+}
+
+
+.signup button {
+    align-items: center;
+    width: 5em;
+    height: 1.5em;
+    font-size: 2em;
+    border-radius: 60px;
+    border-color: orangered;
+    background-color: rgb(230, 212, 190);
+    transition: .4s;
+
+
+}
+
+.signup button:hover  {
+    content: " ";
+    width: 6em;
+    padding: 0px 15px;
+    color: antiquewhite;
+    background: linear-gradient(to left, gray, orangered);
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+}
+.input input{
+    width: 500px;
+    height: 35px;
+    padding: 0 7px;
+    border-radius: 55px;
+    font-size: large;
+    border: solid orangered 2px;
+    outline: none;
+}
+.input button{
+    position: relative;
+    height: 35px;
+    left: -20px;
+    border-radius: 0 50px 50px 0;
+    padding: 9px;
+    border: none;
+    background-color: orangered;
+    cursor: pointer;
+    transition: .3s;
+    color: antiquewhite;
+    font-size: 12px;
+    
+}
+.input button i{
+    font-size: 13px;
+}
+section {
+    background: linear-gradient(to top, black, #212122);
+    padding-top: 9em;
+    padding: 90px 150px;
+}
+
+.posters {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2%;
+    list-style: none;
+    padding-bottom: 6%;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+.posters li span {
+    display: flex;
+}
+
+.posters li img {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 30em;
+    height: 45em;
+    box-shadow: 5px 5px 30px orangered;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+
+.posters li img:hover {
+    transform: scale(1.1) ;
+    box-shadow: 5px 5px 30px 10px orangered;
+}
+
+.icons {
+    padding-top: .5em;
+    padding-left: 1em;
+    font-size: 2.8em;
+}
+
+.icons a {
+    padding-right: .5em;
+    color: orangered;
+}
+
+.icons a :hover {
+    transform: scale(1.05);
+    transition-duration: .3s;
+    color: #ffffff;
+}
+
+.icons h5 {
+    color: rgb(221, 176, 158);
+}

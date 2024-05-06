@@ -1,0 +1,96 @@
+/* CSS styles for the movie page */
+
+/* header style */
+header {
+  background-color: #de1f1fcb;
+  padding: 30px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-container h1 {
+  margin: 0;
+}
+
+.title-container a {
+  text-decoration: none;
+  color: #faf5f5;
+}
+
+.title-container a:hover {
+  text-decoration: underline;
+}  
+      
+    /* لون text*/
+  
+  h1 {
+    text-align: center;
+    color: #020202;
+  }  
+        /* ضبط مكان وحجم الصوره */
+  
+  .movie-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+         /* صندوق الفلم */
+  .movie {
+    width: 40%;
+    background-color: #f0150daf;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(255, 253, 253, 0.1);
+    transition: transform 0.3s ease;
+  }
+           /* تحريك صندوق الفلم عند النقر عليه */ 
+  .movie:hover {
+    transform: translateY(-5px);
+  }
+        /* مقاس وحجم صوره الفلم */ 
+  .movie img {
+    width: 100%;
+    border-radius: 5px;  
+  }
+  
+   /* لون ملخص الفلم  */
+  .movie p {
+    margin-top: 10px;
+    color: #ffffff;
+  }
+  
+  .movie a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+
+    /*طريقه الكتابه */
+  html {
+    direction: rtl;
+  }
+  
+  h1, h2, p {
+    text-align: right;
+  }
+     /*  لون background */
+  body {
+    background-color: #df0909;
+  }
+
+  /* الباك جروند الصوره المتحركه */
+body {
+  background-image: url("https://media1.tenor.com/m/mWpYDtV1zTkAAAAC/minions-shh.gif");
+  background-size: 70%; 
+  background-position: center; 
+}

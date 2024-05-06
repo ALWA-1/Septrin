@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="home/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&display=swap"
+                rel="stylesheet">
+    <title>septrin.movies</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-container">
+            <div class="left-side">
+                <span class="bar" title="Menu">
+                    <button class="btn-bar" id="btn-bar">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </span>
+                <a href="login/login.html"><i class="fa-solid fa-user" id="profile" title="Signup"></i></a>
+                <span class="logo">Septrin</span>
+            </div>
+            <div class="center-side">
+                <ul class="content">
+                    <li><a href="index.html">Home</a></li>
+                    <li><span style="color: var(--black-color);transition: .5s;">Movies</span>
+                    <ul class="movie-menu">
+                        <li><a href="kareem/english.html">English</a></li>
+                        <li><a href="kareem/turkey.html">Turkey</a></li>
+                        <li><a href="ali/indian.html">Indian</a></li>
+                        <li><a href="ali/arabic.html">Arabic</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="news/news.html">News</a></li>
+                    <li><a href="mazen/feedback_white.html">Feedback</a></li>
+                </ul>
+                <span class="btn-mode"><button class="dark-mode"><i class="fa-solid fa-circle-half-stroke" id="icon" title="Switch Mode"></i></button></span>
+                <div class="search-container">
+                    <div class="search">
+                        <button class="input-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input class="search-input" type="search" placeholder="Search..." name="search" onkeyup="search()">
+                        <div class="search-list">
+                            <div class="search-result">
+                                <img src="https://m.media-amazon.com/images/M/MV5BNzZlODVjMzgtZGM1Yi00MWMwLTkyYTQtMzJlZjQ4MDgwYzg4XkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg" alt="">
+                                <a href="movies/monkey man.html" style="text-decoration: none; color: var(--black-color);"><h3 >Monkey Man</h3></a>
+                                <h5 style="padding-left: 5px; color: var(--black-color);">(2024)</h5>
+                            </div>
+                            <div class="search-result">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMDExZGMyOTMtMDgyYi00NGIwLWJhMTEtOTdkZGFjNmZiMTEwXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_.jpg" alt="">
+                                <a href="movies/johnwick.html" style="text-decoration: none; color: var(--black-color);"><h3 >John Wick Ch4</h3></a>
+                                <h5 style="padding-left: 5px; color: var(--black-color);">(2023)</h5>
+                            </div>
+                            <div class="search-result">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMjA5ZjA3ZjMtMzg2ZC00ZDc4LTk3MTctYTE1ZTUzZDIzMjQyXkEyXkFqcGdeQXVyMTM1NjM2ODg1._V1_.jpg" alt="">
+                                <a href="movies/fallout.html" style="text-decoration: none; color: var(--black-color);"><h3 >The Fall Guy</h3></a>
+                                <h5 style="padding-left: 5px; color: var(--black-color);">(2024)</h5>
+                            </div>
+                            <div class="search-result">
+                                <img src="https://m.media-amazon.com/images/M/MV5BM2MyNTAwZGEtNTAxNC00ODVjLTgzZjUtYmU0YjAzNmQyZDEwXkEyXkFqcGdeQXVyNDc2NTg3NzA@._V1_.jpg" alt="">
+                                <a href="movies/the batman.html" style="text-decoration: none; color: var(--black-color);"><h3 >The Batman</h3></a>
+                                <h5 style="padding-left: 5px; color: var(--black-color);">(2022)</h5>
+                            </div>
+                            <div class="search-result">
+                                <img src="https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_.jpg" alt="">
+                                <a href="movies/oppenheimer.html" style="text-decoration: none; color: var(--black-color);"><h3 >Oppenheimer</h3></a>
+                                <h5 style="padding-left: 5px; color: var(--black-color);">(2023)</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="none">
+        
+    </div>
+    <div class="menu" id="menu">
+        <ul class="menu-content">
+            <li class="li1"><i class="fa-solid fa-house"></i><a href="">Home</a></li>
+            <li><i class="fa-solid fa-ghost" style="padding-left: 3px;"></i><a href="anime/anime.html">Septrin.Anime</a></li>
+            <li class="li2"><i class="fa-solid fa-circle-user"></i><a href="profile/profile.html">Profile</a></li>
+            <li class="li4"><i class="fa-solid fa-film"></i><a href="mazen/summary for film white.html">Story telling</a></li>
+            <li><i class="fa-solid fa-trophy"></i><a href="oscars/oscars.html">Oscars</a></li>
+            <li><i class="fa-solid fa-pen"></i><a href="mazen/feedback_white.html">Feedback</a></li>
+            <li class="li6"><i class="fa-solid fa-hand-point-down"></i><span style="padding-left: 15px;">Contact us </span></li>
+            <li class="li7"><a href="https://discord.gg/4kX7m9QU"><i class="fa-brands fa-discord"></i></a><a href="#whatsapp"><i class="fa-brands fa-whatsapp" style="font-size: 24px;"></i></a><a href="#github"><i class="fa-brands fa-github"></i></a></li>
+        </ul>              
+    </div>
+    <div class="movies-container">
+        <div class="movies" >
+            <div class="top-movie" >
+                <img src="img/f-t-1.png"  class="top-title" style="width: 300px; padding: 50px 0px;" alt="django">
+                <p style="width: 300px; color: var(--black-color);">With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation owner in Mississippi.</p>
+                <button class="top-button"><a href="movies/django.html" style="color: black; text-decoration: none; ">WATCH</a></button>
+            </div>
+            <div class="movies-section">
+                <div class="movies-cat">
+                    <h1 style="color: var(--black-color);">ACTION</h1>
+                    <a href="kareem/english.html">Show all</a>
+                </div>
+                <div class="movies-list">
+                    <div class="movies-list-items">
+                        <img src="img/nobody.jpg" class="movies-list-items-img" alt="nobody">
+                        <span class="movies-list-items-span" >Nobody</span>
+                        <p class="movies-list-items-p">A docile family man slowly reveals his true character after his house gets burgled by two petty thieves, which, coincidentally, leads him into a bloody war with a Russian crime boss.</p>
+                        <button class="movies-list-items-button"><a href="movies/nobody.html" style="color: black; text-decoration: none; ">WATCH</a></button>
+                    </div>
+                    <div class="movies-list-items">
+                        <img src="img/johnwick.jpg" class="movies-list-items-img" alt="johnwick">
+                        <span class="movies-list-items-span">John Wick 4</span>
+                        <p class="movies-list-items-p">John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.</p>
+                        <button class="movies-list-items-button"><a href="movies/johnwick.html" style="color: black; text-decoration: none; ">WATCH</a></button>
+                    </div>
+                    <div class="movies-list-items">
+                        <img src="img/cgSx1Owixa4HGy2TV47izxO6Ezx.jpg" class="movies-list-items-img" alt="the Batman">
+                        <span class="movies-list-items-span">The Batman</span>
+                        <p class="movies-list-items-p">When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.</p>
+                        <button class="movies-list-items-button"><a href="movies/the batman.html" style="color: black; text-decoration: none; ">WATCH</a></button>
+                    </div>
+                    <div class="movies-list-items">
+                        <img src="img/monkeyman.jpg" class="movies-list-items-img" alt="monkey man">
+                        <span class="movies-list-items-span">Monkey Man</span>
+                        <p class="movies-list-items-p">An anonymous young man unleashes a campaign of vengeance against the corrupt leaders who murdered his mother and continue to systematically victimize the poor and powerless.</p>
+                        <button class="movies-list-items-button"><a href="movies/monkey man.html" style="color: black; text-decoration: none; ">WATCH</a></button>
+                    </div>
+                </div>
+                    <!-- ----------------------------------------------------------------------------------------------------------- -->
+                <div class="movies-section">
+                    <div class="movies-cat">
+                        <h1 style="color: var(--black-color);">SERIES</h1>
+                        <a href="waiting.html">Show all</a>
+                    </div>
+                    <div class="movies-list">
+                        <div class="movies-list-items">
+                            <img src="img/dexter.jpg" class="movies-list-items-img" alt="nobody">
+                            <span class="movies-list-items-span" >Dexter</span>
+                            <p class="movies-list-items-p">He's smart. He's lovable. He's Dexter Morgan, America's favorite serial killer, who spends his days solving crimes and nights committing them.</p>
+                            <button class="movies-list-items-button"><a href="waiting.html" style="color: black; text-decoration: none;">WATCH</a></button>
+                        </div>
+                        <div class="movies-list-items">
+                            <img src="img/daredevil.jpg" class="movies-list-items-img" alt="johnwick">
+                            <span class="movies-list-items-span">Daredevil</span>
+                            <p class="movies-list-items-p">A blind lawyer by day, vigilante by night. Matt Murdock fights the crime of New York as Daredevil.</p>
+                            <button class="movies-list-items-button"><a href="waiting.html" style="color: black; text-decoration: none;">WATCH</a></button>
+                        </div>
+                        <div class="movies-list-items">
+                            <img src="img/thelastofus.jpg" class="movies-list-items-img" alt="the Batman">
+                            <span class="movies-list-items-span">The Last Of Us</span>
+                            <p class="movies-list-items-p">After a global pandemic destroys civilization, a hardened survivor takes charge of a 14-year-old girl who may be humanity's last hope.</p>
+                            <button class="movies-list-items-button"><a href="waiting.html" style="color: black; text-decoration: none;">WATCH</a></button>
+                        </div>
+                        <div class="movies-list-items">
+                            <img src="img/bettercallsull.jpg" class="movies-list-items-img" alt="monkey man">
+                            <span class="movies-list-items-span">Better Call Sull</span>
+                            <p class="movies-list-items-p">The trials and tribulations of criminal lawyer Jimmy McGill in the years leading up to his fateful run-in with Walter White and Jesse Pinkman.</p>
+                            <button class="movies-list-items-button"><a href="waiting.html" style="color: black; text-decoration: none;">WATCH</a></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------------------------------------------------------------------------------------------------- -->
+                <div class="movies-section">
+                    <div class="movies-cat">
+                        <h1 style="color: var(--black-color);">BIOGRAPHY</h1>
+                        <a href="waiting.html">Show all</a>
+                    </div>
+                    <div class="movies-list">
+                        <div class="movies-list-items">
+                            <img src="img/grand turismo.jpg" class="movies-list-items-img" alt="nobody">
+                            <span class="movies-list-items-span" >Gran Turismo</span>
+                            <p class="movies-list-items-p">Based on the unbelievable, inspiring true story of a team of underdogs - a struggling, working-class gamer, a failed former race car driver, and an idealistic motorsport exec - who risk it all to take on the most elite sport in the world.</p>
+                            <button class="movies-list-items-button"><a href="movies/gran.html" style="color: black; text-decoration: none;">WATCH</a></button>
+                        </div>
+                        <div class="movies-list-items">
+                            <img src="img/anthropoid.jpg" class="movies-list-items-img" alt="johnwick">
+                            <span class="movies-list-items-span">Anthropoid</span>
+                            <p class="movies-list-items-p">Based on the extraordinary true story of Operation Anthropoid, the WWII mission to assassinate SS General Reinhard Heydrich, the main architect behind the Final Solution and the Reich's third in command after Hitler and Himmler.</p>
+                            <button class="movies-list-items-button"><a href="movies/anthr.html" style="color: black; text-decoration: none;">WATCH</a></button>
+                        </div>
+                        <div class="movies-list-items">
+                            <img src="img/oppenheimer.jpg" class="movies-list-items-img" alt="the Batman">
+                            <span class="movies-list-items-span">Oppenheimer</span>
+                            <p class="movies-list-items-p">The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.</p>
+                            <button class="movies-list-items-button"><a href="movies/oppenheimer.html" style="color: black; text-decoration: none;">WATCH</a></button>
+                        </div>
+                        <div class="movies-list-items">
+                            <img src="img/the fighter.jpg" class="movies-list-items-img" alt="monkey man">
+                            <span class="movies-list-items-span">The Fighter</span>
+                            <p class="movies-list-items-p">Based on the story of Micky Ward, a fledgling boxer who tries to escape the shadow of his more famous but troubled older boxing brother and get his own shot at greatness.</p>
+                            <button class="movies-list-items-button"><a href="movies/the fighter.html" style="color: black; text-decoration: none;">WATCH</a></button>
+                        </div>
+                    </div>
+            </div>
+            <!-- ---------------------------------------------------------------------------------------------------------------------- -->
+            <div class="movies-section">
+                <div class="movies-cat">
+                    <h1 style="color: var(--black-color);">COMEDY</h1>
+                    <a href="waiting.html">Show all</a>
+                </div>
+                <div class="movies-list">
+                    <div class="movies-list-items">
+                        <img src="img/shaun of the sead.jpg" class="movies-list-items-img" alt="nobody">
+                        <span class="movies-list-items-span" >Shaun Of The Dead</span>
+                        <p class="movies-list-items-p">The uneventful, aimless lives of a London electronics salesman and his layabout roommate are disrupted by the zombie apocalypse.</p>
+                        <button class="movies-list-items-button"><a href="movies/shown.html" style="color: black; text-decoration:none;">WATCH</a></button>
+                    </div>
+                    <div class="movies-list-items">
+                        <img src="img/bullet train.jpg" class="movies-list-items-img" alt="johnwick">
+                        <span class="movies-list-items-span">Bullet Train</span>
+                        <p class="movies-list-items-p">Five assassins aboard a swiftly-moving bullet train find out that their missions have something in common.</p>
+                        <button class="movies-list-items-button"><a href="movies/bullettrain.html" style="color: black; text-decoration:none;">WATCH</a></bu<a href="movies/" style="color: black; text-decoration: none; "></a>
+                    </div>
+                    <div class="movies-list-items">
+                        <img src="img/kik ass.jpg" class="movies-list-items-img" alt="the Batman">
+                        <span class="movies-list-items-span">Kick-Ass</span>
+                        <p class="movies-list-items-p">Dave Lizewski is an unnoticed high school student and comic book fan who one day decides to become a superhero, even though he has no powers, training or meaningful reason to do so.</p>
+                        <button class="movies-list-items-button"><a href="movies/kick-ass.html" style="color: black; text-decoration:none;">WATCH</a></button>
+                    </div>
+                    <div class="movies-list-items">
+                        <img src="img/scott.jpg" class="movies-list-items-img" alt="monkey man">
+                        <span class="movies-list-items-span">Scott Pilgrim vs. the World</span>
+                        <p class="movies-list-items-p">In a magically realistic version of Toronto, a young man must defeat his new girlfriend's seven evil exes one by one in order to win her heart.</p>
+                        <button class="movies-list-items-button"><a href="movies/scutt.html" style="color: black; text-decoration:none;">WATCH</a></button>
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+    <div class="end">
+        <div class="end-left">
+            <a href="">Privacy Police</a> <span>| <a href="">Terms Of Use</a></span>
+        </div>
+        <div class="end-center">
+            
+            <h4 style="color: var(--black-color);">This website was designed by septrin team from FCAIH-SWE.</h4>
+        </div>
+        <div class="end-right">
+            <h4 style="font-weight: 300; color: var(--black-color);">© 2024 Septrin.com, Inc</h4>
+        </div>
+    </div>
+    <script>
+        var btn = document.getElementById('btn-bar');
+        var menu = document.getElementById('menu');
+    btn.addEventListener('click', function() {
+        menu.classList.toggle('active');
+    });
+    </script>
+    <script>
+        var icon = document.getElementById("icon");
+        icon.onclick =function(){
+            document.body.classList.toggle("dark-theme")
+        }
+    </script>
+    <script src="home/home.js"></script>
+</body>
+</html>
